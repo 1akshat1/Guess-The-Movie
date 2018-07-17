@@ -4,7 +4,7 @@ public class Driver {
     public static void main (String [] args) {
 
 
-        Game play = new Game("movies1.txt"); //Create a new Game object
+        Game play = new Game("movies.txt"); //Create a new Game object
         play.setRandomTitle();
         System.out.println("You are guessing: ");
         play.displayTitle();
