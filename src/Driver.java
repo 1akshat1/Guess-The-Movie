@@ -1,17 +1,14 @@
-import java.io.File;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Scanner;
 
 public class Driver {
 
     public static void main (String [] args) {
 
 
-        Game play = new Game("movies.txt");
+        Game play = new Game("movies.txt"); //Create a new Game object
         play.setRandomTitle();
-        System.out.println(play.getValue());
+        System.out.println("You are guessing: ");
         play.displayTitle();
+
         //User input
         while(play.getPoints()>0){
             System.out.println("Guesses left:" + play.getPoints());
